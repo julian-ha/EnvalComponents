@@ -1,0 +1,274 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<style>
+    /* Startseite */
+  .wrapper {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: inline;
+    color: rgb(18, 18, 18);
+    margin-top: -250px;
+  }
+  .navbar-item img {
+    margin-left: -14px;
+  }
+  .navbar-item .buttons {
+    margin-right: -13px;
+  }
+  .swiper-slide {
+    height: 70vh;
+  }
+  .slider-caption {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40vh;
+    padding-bottom: 30px;
+  }
+  /* Startseite */
+.wrapper {
+  /* Nur Desktop */
+}
+.swiper-container {
+  /* width: 100%;
+  height: 100%; */
+  vertical-align: middle;
+}
+.swiper-slide {
+  text-align: left;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-scrollbar-drag {
+  background: rgba(255, 255, 255, 0.363);
+}
+.slider-caption {
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20vh;
+  padding-bottom: 30px;
+  color: #fff !important;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.6),
+    rgba(29, 100, 182, 0.2)
+  );
+}
+.slider-caption h1,
+.slider-caption p,
+.slider-caption a {
+  color: #fff !important;
+}
+
+
+</style>
+
+
+
+<script>
+
+</script>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <br>
+                <h2 class="title">Komponente e-005: Slider </h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+        <div class="main-navigation wrapper">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h2 class="title">Enval</h2>
+          </a>
+    
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+    
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              Startseite
+            </a>
+            <a class="navbar-item" href="/ueber-uns">
+              Über uns
+            </a>
+            <a
+              href="https://cms.autohaus-sing.de/de/veranstaltungen/"
+              class="navbar-item"
+            >
+              Veranstaltungen
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/leistungen">
+                Serviceleistungen
+              </a>
+    
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/leistungen#service_pkw">
+                  Serviceleistungen PKW
+                </a>
+                <a class="navbar-item" href="/grosskunden#service_lkw">
+                  Serviceleistungen LKW
+                </a>
+              </div>
+            </div>
+            <a class="navbar-item" href="/motorsport-sing">
+              Motorsport
+            </a>
+            <a class="navbar-item" href="/kontakt">
+              Kontakt
+            </a>
+    
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Mehr
+              </a>
+    
+              <div class="navbar-dropdown">
+                <a
+                  href="https://cms.autohaus-sing.de/de/angebote/"
+                  class="navbar-item"
+                >
+                  Aktionen und Angebote
+                </a>
+                <a
+                  href="https://cms.autohaus-sing.de/de/karriere/"
+                  class="navbar-item"
+                >
+                  Karriere
+                </a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item" href="/heidenheim">
+                  Heidenheim an der Brenz
+                </a>
+                <a class="navbar-item" href="/giengen">
+                  Giengen an der Brenz
+                </a>
+                <a class="navbar-item" href="/lauingen">
+                  Lauingen an der Donau
+                </a>
+                <hr class="navbar-divider" />
+                <a
+                  class="navbar-item"
+                  href="https://www.mercedes-benz.de/passengercars/service-finance/classicpartner/stage.module.html"
+                >
+                  Sing Classic
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-link" href="/grosskunden">
+                  <strong>Geschäfts und Großkunden</strong>
+                </a>
+                <a class="button is-light" href="/#auswahl-haeuser">
+                  Standort wählen
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="e-assistent" onclick="esmartassistent()">
+  <i class="lni lni-comments"></i>
+</div>
+
+
+<div class="startseite-slider wrapper">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div
+        class="swiper-slide"
+        style="background-image: url(https://images.unsplash.com/photo-1587614204968-68ba4b5e0be3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);"
+      >
+        <div class="slider-caption">
+          <h1 class="title">
+            Kommen Sie zu unseren Räderwechsel-Aktionstagen
+          </h1>
+          <p class="subtitle">
+            Die Boxenstopp-Termine: Heidenheim und Giengen vom 06.04.2020 bis
+            zum 08.05.2020.
+          </p>
+          <a
+            class="text-link"
+            href="https://cms.autohaus-sing.de/reifenwechsel-aktionstage/"
+            >Weiter lesen</a
+          >
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);"
+      >
+        <div class="slider-caption">
+          <h1 class="title">
+            Der neue SEAT Leon
+          </h1>
+          <p class="subtitle">
+            Wir halten Sie auf dem laufenden! Kontaktieren Sie uns gern für mehr
+            Informationen
+          </p>
+          <a class="text-link" href="/lauingen">Mehr dazu</a>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url(https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);"
+      >
+        <div class="slider-caption">
+          <h1 class="title">
+            Ausfahrt mit dem Cupra Ateca
+          </h1>
+          <p class="subtitle">
+            Wir waren mit dem Cupra Ateca unterwegs und haben euch ein paar
+            Bilder eingefangen.
+          </p>
+          <a class="text-link" href="https://cms.autohaus-sing.de/cupra-ateca/"
+            >Mehr dazu</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</section>
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
