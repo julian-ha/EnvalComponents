@@ -1,0 +1,137 @@
+<style>
+/* Navigation */
+.e002-navbar {
+  height: 70px;
+}
+.e002-navigation {
+  border-bottom: 1px solid #e8e8e8;
+}
+.e002-header {
+  padding-top: 160px;
+  padding-bottom: 140px;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.e002-start {
+  background: linear-gradient(
+      110deg,
+      rgb(255, 255, 255) 10%,
+      rgba(29, 29, 29, 0.366)
+    ),
+    url("https://images.unsplash.com/photo-1585253034862-de1e6e7d4f45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+}
+</style>
+
+<script>
+
+</script>
+
+
+
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <br>
+                <h2 class="title">Komponente e-002: Header Custom Size</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <section class="navigation e002-navigation">
+    <div class="container">
+      <nav class="navbar  e002-navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h4 class="title is-4"> Enval</h4>
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/ueber_uns"> 
+              Über uns
+            </a>
+
+            <a class="navbar-item" href="/kontakt">
+              Kontakt
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Prüfungen
+              </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">
+                  Regalanlagen
+                </a>
+                <a class="navbar-item" href="#">
+                  Leitern, Tritte und Kleingerüste
+                </a>
+                <a class="navbar-item" href="#">
+                  Steigleitern und Steigeisengänge
+                </a>
+                <a class="navbar-item" href="#">
+                  PSA gegen Absturz
+                </a>
+                <a class="navbar-item" href="#">
+                  Spielplatzanlagen
+                </a>
+                <a class="navbar-item" href="#">
+                  Hydraulik-Schlauchleitungen
+                </a>
+                <a class="navbar-item" href="#">
+                  Anschlag- und Lastaufnahmemittel
+                </a>
+                <a class="navbar-item" href="#">
+                  Schultafeln
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!--Main Content-->
+  <section class="section e002-header e002-start" style="">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-full ">
+
+        <h1 class="title is-2" data-aos="fade-up" data-aos-delay="000">
+          UVV Prüfungen
+        </h1>
+        <p class="subtitle is-5" data-aos="fade-up" data-aos-delay="300">
+          Sämtliche mechanische Prüfungen <br />
+          Alles aus einer Hand
+        </p>
+        <button data-aos="fade-up" data-aos-delay="600" class="button is-link"
+          onclick="window.location.replace('/kontakt')">
+          Jetzt Anfragen
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
